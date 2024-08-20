@@ -1,0 +1,112 @@
+* {
+    margin: 0
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #e1e3ea;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .app {
+    width: 60%;
+  }
+
+  @media (max-width:768px) {
+    .app {
+      width: 90%;
+    }
+  }
+
+  .app h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    /* border-radius: .5rem .5rem 0 0; */
+    background-color:turquoise;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+  .app form {
+    display: flex;
+    width: 100%;
+    background-color: rgb(134, 221, 212);
+  }
+
+  .app form input {
+    border: none;
+    background-color: rgb(134, 221, 212);
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .app form button {
+    border: none;
+    color: white;
+    background-color: rgb(30, 177, 162);
+    font-size: 25px;
+    font-weight: 600;
+    height: 42px;
+    width: 10%;
+  }
+
+  .app ul {
+    list-style: none;
+    color: #e0e0e0;
+    padding: 0;
+  }
+
+  .app ul li {
+    padding: 10px;
+    background-color: rgb(134, 221, 212);
+    border-bottom: 1px solid rgb(134, 221, 212);
+  }
+
+  .check {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    /* -webkit-appearance: none; */
+  }
+
+  .check:checked {
+    background-color: #1dd2af;
+  }
+
+  .task {
+    font-size: 18px;
+    padding: 0 10px;
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: black;
+  }
+
+  .task:focus {
+    outline: none;
+  }
+
+  .app ul li i {
+    color: black;
+    float: right;
+    cursor: pointer;
+  }
+
+  .app ul li i:hover {
+    color: rgb(255, 82, 82);
+  }
+
+  .completed {
+    color: darkgray;
+    text-decoration: line-through;
+  }
